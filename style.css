@@ -13,7 +13,7 @@
 
 .btn-primary {
 
-    padding: 20px 25px;
+    padding: 15px 20px;
     border-radius: 5px;
     background: #F15B22;
     border: 0;
@@ -22,25 +22,43 @@
     font-weight: 600;
 }
 
+.card-img {
+
+    max-width: 500px;
+
+}
+
+section {
+    margin: 100px 200px;
+}
+
+.section-title {
+
+    color: #151414;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px 0px;
+}
+
 /* banner style */
 .banner-container {
     background-image: url("images/banner/banner2.png");
-    background-position: top  20px;
+    background-position: top 20px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
-   
+
+
 }
-.banner-info{
+
+.banner-info {
     max-width: 500px;
     text-align: right;
     padding-top: 100px;
-  
-    
 
 }
 
@@ -48,7 +66,7 @@
     color: #151414;
     font-size: 65px;
     font-weight: 700;
-    
+
 }
 
 .banner-des {
@@ -56,4 +74,125 @@
     padding: 30px 0px;
     font-size: 16px;
     font-weight: 400;
+}
+
+/* year section style */
+
+.year-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+
+.year-info {
+
+    max-width: 500px;
+}
+
+.year-des {
+    color: #444343;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 18px 0px;
+}
+
+.year-info ul {
+    list-style: none;
+    color: #444343;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+.year-info li>i {
+    color: #16D887;
+}
+
+
+/* my plane style */
+.my-plane-container {
+
+    margin: 0px auto;
+}
+
+.my-plane-content {
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.my-plane p {
+    color: #737272;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.my-plane-title {
+    color: #151414;
+    padding: 18px 0px;
+    font-size: 30px;
+    font-weight: 700;
+   
+}
+
+/* positive syle  */
+.positive-container{
+
+    background-image: url("images/watch.png"),url("images/gradient2.png");
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding: 60px 600px 60px 50px;
+}
+.positive-btn{
+    background-color: white;
+    color: #F15B22;
+    margin-top: 25px;
+}
+
+/* footer */
+
+footer{
+
+    background-color: #151414;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    padding: 50px 200px;
+}
+
+footer h2{
+    color: white;
+}
+
+footer p{
+    color: #FFF;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+padding: 18px 0px;
+max-width: 500px;
+}
+
+footer ul li{
+    list-style: none;
+    line-height: 30px;
+}
+.media-icon{
+    margin-top: 20px;
+}
+
+.footer-form input[type="email"]{
+    padding: 20px 150px 20px 20px;
+    border-radius: 8px;
+border: 1px solid #FFF;
+margin-top: 20px;
 }
