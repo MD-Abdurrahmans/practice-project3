@@ -24,7 +24,7 @@
 
 .card-img {
 
-    max-width: 500px;
+    width: 100%;
 
 }
 
@@ -64,7 +64,7 @@ section {
 
 .banner-title {
     color: #151414;
-    font-size: 65px;
+    font-size: 4rem;
     font-weight: 700;
 
 }
@@ -81,14 +81,16 @@ section {
 .year-container {
 
     display: flex;
-    justify-content: center;
-    gap: 100px;
+    justify-content: space-around;
+    gap: 50px;
     align-items: center;
+
 }
 
-.year-info {
+.year-info,
+.year-image {
 
-    max-width: 500px;
+    width: 50%;
 }
 
 .year-des {
@@ -120,6 +122,8 @@ section {
 .my-plane-content {
 
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
     text-align: center;
 
@@ -137,13 +141,13 @@ section {
     padding: 18px 0px;
     font-size: 30px;
     font-weight: 700;
-   
+
 }
 
 /* positive syle  */
-.positive-container{
+.positive-container {
 
-    background-image: url("images/watch.png"),url("images/gradient2.png");
+    background-image: url("images/watch.png"), url("images/gradient2.png");
     background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
@@ -151,7 +155,8 @@ section {
     height: 300px;
     padding: 60px 600px 60px 50px;
 }
-.positive-btn{
+
+.positive-btn {
     background-color: white;
     color: #F15B22;
     margin-top: 25px;
@@ -159,40 +164,175 @@ section {
 
 /* footer */
 
-footer{
+footer {
 
     background-color: #151414;
     color: white;
     display: flex;
     justify-content: center;
-    gap: 300px;
+    gap: 10px;
     padding: 50px 200px;
+
 }
 
-footer h2{
+.footer-form,
+.footer-info {
+    width: 50%;
+}
+
+footer h2 {
     color: white;
 }
 
-footer p{
+footer p {
     color: #FFF;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-padding: 18px 0px;
-max-width: 500px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 18px 0px;
+
 }
 
-footer ul li{
+footer ul li {
     list-style: none;
     line-height: 30px;
 }
-.media-icon{
+
+.media-icon {
     margin-top: 20px;
 }
 
-.footer-form input[type="email"]{
+.footer-form input[type="email"] {
     padding: 20px 150px 20px 20px;
     border-radius: 8px;
-border: 1px solid #FFF;
-margin-top: 20px;
+    border: 1px solid #FFF;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+/* responsive mobile device */
+
+@media screen and (max-width:576px) {
+    section {
+        margin: 50px 20px;
+    }
+
+    /* banner style */
+    .banner-container {
+        background-image: url("images/banner/banner2.png"), linear-gradient(rgba(20, 20, 20, 0.606), rgba(35, 35, 35, 0.098));
+        background-blend-mode: overlay;
+        background-position: top 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+    }
+
+    .banner-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 1.9rem;
+        color: white;
+    }
+
+    .banner-des {
+        color: rgb(235, 235, 235);
+
+    }
+
+    .year-container,
+    .my-plane-content,
+    footer {
+        flex-direction: column;
+    }
+
+    .year-info,
+    footer p {
+        width: 100%;
+    }
+
+    .positive-container,
+    footer {
+        padding: 10px;
+    }
+
+    footer {
+        gap: 50px;
+    }
+
+
+}
+
+
+
+/* responsvie for tablet or mudium device */
+
+
+
+@media screen and (min-width:576px) and (max-width:992px) {
+
+
+    section {
+        margin: 50px 20px;
+    }
+
+    /* banner style */
+    .banner-container {
+        background-image: url("images/banner/banner2.png"), linear-gradient(rgba(20, 20, 20, 0.606), rgba(35, 35, 35, 0.098));
+        background-blend-mode: overlay;
+        background-position: top 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+    }
+
+    .banner-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 2.9rem;
+        color: white;
+    }
+
+    .banner-des {
+        color: rgb(235, 235, 235);
+
+    }
+
+    .year-container footer {
+        flex-direction: column;
+    }
+
+    .year-info,
+    footer p {
+        width: 100%;
+    }
+
+    .positive-container,
+    footer {
+        padding: 20px;
+    }
+
+    footer {
+        gap: 100px;
+    }
+
 }
