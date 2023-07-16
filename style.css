@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html,body{
+    overflow-x: hidden
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;800&display=swap');
 
@@ -332,7 +335,7 @@ footer ul li {
     }
 
     footer {
-        gap: 100px;
+        gap: 50px;
     }
 
 }
